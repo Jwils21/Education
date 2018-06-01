@@ -11,21 +11,21 @@ namespace Education {
 			Instructor danTheMan = new Instructor();
 			danTheMan.Name = "Dan";
 			danTheMan.ExperienceInYears = 17;
-			danTheMan.PrimaryLanguage = "Csharp";
+			danTheMan.PrimaryLanguage = "CSharp";
 			danTheMan.Email = "dantheman@military.gov";
 			danTheMan.Phone = "123-456-7890";
 
 			Class dotNetBootCamp4 = new Class();
 			dotNetBootCamp4.Capacity = 16;
 			dotNetBootCamp4.Code = "DN4";
-			dotNetBootCamp4.Language = "Csharp";
+			dotNetBootCamp4.Language = "CSharpX";
 			dotNetBootCamp4.Name = "Dot Net Boot Camp 4";
 			dotNetBootCamp4.Instructor = danTheMan;
 
 			Student foster = new Student();
 			foster.Absences = 0;
 			foster.ContactInfo = "Call Foster";
-			foster.FirstJob = DateTime.MinValue;
+			foster.FirstJob = null;
 			foster.Name = "Foster";
 			foster.Class = dotNetBootCamp4;
 
@@ -47,6 +47,13 @@ namespace Education {
 			dotNetBootCamp4.Students.Add(foster);
 			dotNetBootCamp4.Students.Add(jj);
 			dotNetBootCamp4.Students.Add(mitch);
+
 			
+
+			Assignment asg1 = danTheMan.CreateAssignment("First fundamentals assignment", "Fundamentals 12");
+			dotNetBootCamp4.DistributeAssignment(asg1);
+
+
 		}
 	}
+}
