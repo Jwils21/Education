@@ -18,7 +18,7 @@ namespace Education {
 			Class dotNetBootCamp4 = new Class();
 			dotNetBootCamp4.Capacity = 16;
 			dotNetBootCamp4.Code = "DN4";
-			dotNetBootCamp4.Language = "CSharpX";
+			dotNetBootCamp4.Language = "CSharp";
 			dotNetBootCamp4.Name = "Dot Net Boot Camp 4";
 			dotNetBootCamp4.Instructor = danTheMan;
 
@@ -47,8 +47,6 @@ namespace Education {
 			dotNetBootCamp4.Students.Add(foster);
 			dotNetBootCamp4.Students.Add(jj);
 			dotNetBootCamp4.Students.Add(mitch);
-
-			
 
 			Assignment asg1 = danTheMan.CreateAssignment("First fundamentals assignment", "Fundamentals 12");
 			dotNetBootCamp4.DistributeAssignment(asg1);
